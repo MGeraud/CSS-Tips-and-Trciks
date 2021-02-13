@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  height: 100%;
+  /*mise en place de la grille */
+  display: grid;
+
+  /* mise en place du template des colonnes et lignes(taille);*/
+  grid-template-columns: 1fr 1.5fr 2fr 0.75fr;
+  grid-template-rows: 10% 30% 50% 10%;
+
+  /*mise en place du template de grille en donnant des noms pour les différentes aires, + lisible */
+  grid-template-areas:
+    "grosBloc   grosBloc    grosBloc     petitBlocHD"
+    "grosBloc   grosBloc    grosBloc     petitBlocHD"
+    "grosBloc   grosBloc    grosBloc     colonneD"
+    "footer     footer      basMilieu    colonneD";
+}
+
+/*dans les propriété de chque section on met le nom de l'aire auquel elle correspond*/
+section.section1 {
+  grid-area: grosBloc;
+  background-color: brown;
+}
+
+section.section2 {
+  grid-area: footer;
+  background-color: rgb(126, 119, 119);
+}
+
+section.section3 {
+  grid-area: basMilieu;
+  background-color: rgb(79, 42, 165);
+}
+
+section.section4 {
+  grid-area: colonneD;
+  background-color: rgb(165, 153, 42);
+}
+
+section.section5 {
+  grid-area: petitBlocHD;
+  background-color: rgb(27, 109, 10);
+}

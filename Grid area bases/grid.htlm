@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid css</title>
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+  </head>
+  <body>
+    <!-- bloc dans lequel il y aura la grid -->
+    <div class="grid-container">
+      <section class="section1">
+        Ici j'écris ou je post dans ma première section
+      </section>
+
+      <section class="section2">
+        Ici j'écris ou je post dans ma deuxieme section
+      </section>
+
+      <section class="section3">
+        Ici j'écris ou je post dans ma troisieme section
+      </section>
+
+      <section class="section4">
+        Ici j'écris ou je post dans ma quatrieme section
+      </section>
+
+      <section class="section5">
+        Ici j'écris ou je post dans ma cinquieme section
+      </section>
+    </div>
+  </body>
+</html>
