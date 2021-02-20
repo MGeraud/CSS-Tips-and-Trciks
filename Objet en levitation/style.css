@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(156, 87, 1);
+}
+
+.container {
+  margin: 5em;
+  width: 60%;
+  text-align: center;
+  background-color: bisque;
+}
+
+.autre {
+  position: relative;
+  width: 20%;
+}
+
+img {
+  width: 20%;
+}
+
+.levitation {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: rotate(15deg);
+  /*creation de l'ombre du png sans background */
+  filter: drop-shadow(22px -15px 5px rgba(0, 0, 0, 0.5));
+  /** faire bouger l'objet et son ombre en lien avec keyframe  en aller retour sur 8 secondes*/
+  animation: bouge 8s infinite alternate-reverse;
+}
+
+/* keyframe pour l'animation nommée bouge */
+@keyframes bouge {
+  /* point et angle de départ (angle = angle dans .levitation) */
+  from {
+    transform: translateY(50px) rotate(15deg);
+  }
+  /* point et angle d'arrivée de l'animation */
+  to {
+    transform: translateY(100px) rotate(30deg);
+  }
+}
