@@ -9,10 +9,7 @@ body {
   width: 60%;
 }
 
-.autre {
-  position: relative;
-  width: 20%;
-}
+
 
 img {
   width: 20%;
@@ -20,8 +17,8 @@ img {
 
 .levitation {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 15em;
+  left: 1em;
   transform: rotate(15deg);
   /*creation de l'ombre du png sans background */
   filter: drop-shadow(22px -15px 5px rgba(0, 0, 0, 0.5));
