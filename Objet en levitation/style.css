@@ -1,14 +1,12 @@
 body {
   height: 100vh;
   margin: 0;
-  background-color: rgb(156, 87, 1);
+  background-color: bisque;
 }
 
 .container {
-  margin: 5em;
+  margin: 0;
   width: 60%;
-  text-align: center;
-  background-color: bisque;
 }
 
 .autre {
